@@ -37,7 +37,7 @@ function Login() {
       formData.append("password", pass);
 
      const res = await fetch(
-  "https://leave-management-system.wuaze.com/backend/api/auth/adminLogin.php",
+  "/api/auth/adminLogin.php",
   {
     method: "POST",
     credentials: "include",
