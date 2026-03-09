@@ -32,30 +32,20 @@ function Login() {
     setLoading(true);
 
     try {
+      const formData = new FormData();
+      formData.append("email", user);
+      formData.append("password", pass);
+
       const res = await fetch(
         "https://leave-management-system.wuaze.com/backend/api/auth/adminLogin.php",
         {
           method: "POST",
           credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: user,
-            password: pass,
-          }),
+          body: formData,
         },
       );
 
-      const text = await res.text();
-
-      let data;
-
-      try {
-        data = JSON.parse(text);
-      } catch {
-        throw new Error("Invalid JSON");
-      }
+      const data = await res.json();
 
       if (data.status === "success") {
         setToast({
