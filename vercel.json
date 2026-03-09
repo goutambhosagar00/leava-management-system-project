@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://leave-management-system.wuaze.com/backend/api/$1"
+    }
+  ]
+}
