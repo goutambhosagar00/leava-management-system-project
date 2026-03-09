@@ -8,7 +8,7 @@ const PendingLeaves = () => {
   const fetchLeaves = async () => {
     try {
       const res = await fetch(
-        "http://localhost:8080/Leave-Management-System/backend/api/admin/getPendingLeaves.php",
+        "https://leave-management-system.wuaze.com/backend/api/admin/getPendingLeaves.php",
         { credentials: "include" },
       );
 
@@ -27,7 +27,7 @@ const PendingLeaves = () => {
 
   const approveLeave = async (id) => {
     const res = await fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/admin/approveLeave.php",
+      "https://leave-management-system.wuaze.com/backend/api/admin/approveLeave.php",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -47,7 +47,7 @@ const PendingLeaves = () => {
 
   const rejectLeave = async (id) => {
     await fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/admin/rejectLeave.php",
+      "https://leave-management-system.wuaze.com/backend/api/admin/rejectLeave.php",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -6,7 +6,7 @@ function ProtectedRoute({ children }) {
 
   useEffect(() => {
     fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/auth/checkAuth.php",
+      "https://leave-management-system.wuaze.com/backend/api/auth/checkAuth.php",
       { credentials: "include" },
     )
       .then((res) => res.json())

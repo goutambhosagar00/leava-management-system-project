@@ -24,7 +24,7 @@ function Navbar({ toggleSidebar }) {
   const handleLogout = async () => {
     setOpen(false);
     await fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/auth/logout.php",
+      "https://leave-management-system.wuaze.com/backend/api/auth/logout.php",
       {
         method: "POST",
         credentials: "include",

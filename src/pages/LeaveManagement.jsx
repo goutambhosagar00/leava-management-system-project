@@ -17,7 +17,7 @@ function LeaveManagement() {
 
   const fetchEmployees = () => {
     fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/admin/getEmployees.php",
+      "https://leave-management-system.wuaze.com/backend/api/admin/getEmployees.php",
       { credentials: "include" },
     )
       .then((res) => res.json())
@@ -41,7 +41,7 @@ function LeaveManagement() {
 
   const handleSave = (id) => {
     fetch(
-      "http://localhost:8080/Leave-Management-System/backend/api/admin/updateLeave.php",
+      "https://leave-management-system.wuaze.com/backend/api/admin/updateLeave.php",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

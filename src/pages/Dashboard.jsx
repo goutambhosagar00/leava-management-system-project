@@ -33,8 +33,7 @@ import {
   Calendar,
 } from "lucide-react";
 
-const API_BASE =
-  "http://localhost:8080/Leave-Management-System/backend/api/admin";
+const API_BASE = "https://leave-management-system.wuaze.com/backend/api/admin";
 
 const PALETTE = {
   pending: "#f59e0b",

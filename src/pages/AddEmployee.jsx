@@ -159,7 +159,7 @@ export default function AddEmployee() {
       });
 
       const res = await fetch(
-        "http://localhost:8080/Leave-Management-System/backend/api/admin/addEmployee.php",
+        "https://leave-management-system.wuaze.com/backend/api/admin/addEmployee.php",
         {
           method: "POST",
           credentials: "include",

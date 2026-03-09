@@ -36,10 +36,10 @@ function Login() {
         "https://leave-management-system.wuaze.com/backend/api/auth/adminLogin.php",
         {
           method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
           body: JSON.stringify({
             email: user,
             password: pass,
