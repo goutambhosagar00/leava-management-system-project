@@ -41,6 +41,9 @@ function Login() {
   {
     method: "POST",
     credentials: "include",
+     headers: {
+      "Accept": "application/json"
+    },
     body: formData,
   }
 );
