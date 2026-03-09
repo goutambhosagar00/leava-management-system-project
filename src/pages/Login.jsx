@@ -42,7 +42,7 @@ function Login() {
           method: "POST",
           credentials: "include",
           body: formData,
-        },
+        }
       );
 
       const data = await res.json();
